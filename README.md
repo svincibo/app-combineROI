@@ -30,7 +30,8 @@ You can submit this App online at [https://doi.org/10.25663/brainlife.app.313](h
 
 ```json
 {
-"rois": ["testdata/roi1/", "testdata/roi2/"]
+"rois1": "testdata/roi1/",
+"rois2": "testdata/roi2/"
 }
 ```
 
