@@ -19,11 +19,13 @@ mkdir -p output/rois
 
 # Copy files from the roi1 location to the new location and rename.
 for roiname in $(ls $roi1); do
-	cp $roi1/$roiname output/rois/rois1-$roiname
+	#cp $roi1/$roiname output/rois/rois1-$roiname
+	cp $roi1/$roiname output/rois/ROI$roiname
 done
 
 # Copy files from the roi2 location to the new location and rename.
 for roiname in $(ls $roi2); do
-	cp $roi2/$roiname output/rois/rois2-$roiname
+	#cp $roi2/$roiname output/rois/rois2-$roiname
+	cp $roi2/$roiname output/rois/ROI$roiname
 done
 
