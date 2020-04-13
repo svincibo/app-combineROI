@@ -9,8 +9,9 @@ set -x
 set -e
 
 # Parse input file names from config.json. 
-roi1=($(jq -r .rois[0] config.json))
-roi2=($(jq -r .rois[1] config.json))
+# Note: This was purposefully made to only handle two inputs because the pipelines cannot handle multi.
+roi1=($(jq -r .rois1 config.json))
+roi2=($(jq -r .rois2 config.json))
 
 # Make an output directory.
 mkdir -p output

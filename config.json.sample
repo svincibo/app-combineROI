@@ -1,3 +1,4 @@
 {
-"rois": ["testdata/roi1/", "testdata/roi2/"]
+"rois1": "testdata/roi1/",
+"rois2": "testdata/roi2/"
 }
