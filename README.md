@@ -1,5 +1,5 @@
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
-[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.219-blue.svg)](https://doi.org/10.25663/brainlife.app.275)
+[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.219-blue.svg)](https://doi.org/10.25663/brainlife.app.313)
 
 ### Author
 - Sophia Vinci-Booher (svincibo@indiana.edu)
@@ -21,7 +21,7 @@ Merge multiple ROI datatypes into one ROI file.
 
 ### On Brainlife.io
 
-You can submit this App online at [https://doi.org/10.25663/brainlife.app.275](https://doi.org/10.25663/brainlife.app.275) via the "Execute" tab.
+You can submit this App online at [https://doi.org/10.25663/brainlife.app.313](https://doi.org/10.25663/brainlife.app.313) via the "Execute" tab.
 
 ### Running Locally (on your machine)
 
