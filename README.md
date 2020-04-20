@@ -10,9 +10,17 @@
 ### Project director
 - Franco Pestilli (franpest@indiana.edu)
 
-# app-mergeROI
+# app-combineROI
 
-Merge multiple ROI datatypes into one ROI file. 
+Combine multiple ROI datatypes into one ROI file. 
+
+NOTE: The rois supplied MUST BE IN ALIGNMENT with one another -- they must
+be in the same space. If the rois to be combined are not in alignment with
+one another, then the output of this app will be UNUSABLE
+(even though the app will not fail to complete).
+
+If, for example, the the first input ROI has 2 rois inside of it and the second input ROI has 3 rois 
+inside of it, then the output will be an ROI dataset with 5 rois inside of it. 
 
 ### Funding 
 [![NSF-BCS-1734853](https://img.shields.io/badge/NSF_BCS-1734853-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1734853)
