@@ -9,11 +9,6 @@ set -x
 set -e
 
 # Parse input file names from config.json. 
-# Note: This was purposefully made to only handle two inputs because the pipelines cannot handle multi.
-#roi1=($(jq -r .rois1 config.json))
-#roi2=($(jq -r .rois2 config.json))
-
-# this prevents hackers injecting malicious code on bl
 roi1=`jq -r '.rois1' config.json`
 roi2=`jq -r '.rois2' config.json`
 
