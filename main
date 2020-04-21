@@ -8,7 +8,7 @@ set -x
 set -e
 
 # Run script.
-./mergeROI.sh
+./combineROI.sh
 
 # Check for output.
 #[ ! -s dwi.nii ] && exit 1
