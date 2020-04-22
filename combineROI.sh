@@ -18,11 +18,35 @@ mkdir -p output/rois
 
 # Copy files from the roi1 location to the new location and rename.
 for roiname in $(ls $roi1); do
-	cp $roi1/$roiname output/rois/ROI1-$roiname
+	
+	# Copy the rois from the first ROI to the output ROI directory.
+	cp $roi1/$roiname output/rois/$roiname
+
 done
 
 # Copy files from the roi2 location to the new location and rename.
 for roiname in $(ls $roi2); do
-	cp $roi2/$roiname output/rois/ROI2-$roiname
+
+	if [ -f output/rois/$roiname ]; then
+
+		# Get the filename without .nii.gz.
+		base=${roiname%.nii.gz}
+
+		# Compose the new name.
+		newname=$base-2.nii.gz
+
+		# Let the user know.
+		echo "$roiname in the second ROI you provided already exists in the first ROI that you provided ... using different name for the roi from the second ROI: $newname"
+
+		# Copy the rois from the second ROI to the output ROI directory with the new name.
+		cp $roi2/$roiname output/rois/$newname
+
+	else
+
+		# Copy the rois from the second ROI to the output ROI directory.
+		cp $roi2/$roiname output/rois/$roiname
+
+	fi
+
 done
 
