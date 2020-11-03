@@ -12,7 +12,7 @@
 
 # app-combineROI
 
-Combine multiple ROI datatypes into one ROI file. 
+This app will combine multiple ROI datatypes into one ROI file. The input data are ROI brainlife datatypes (two or more) and the output data is one ROI brainlife datatype. The output ROI will contain all of the roi.nii.gz files that were contained within each of the input ROI brainlife datatypes.
 
 NOTE: The rois supplied MUST BE IN ALIGNMENT with one another -- they must
 be in the same space. If the rois to be combined are not in alignment with
